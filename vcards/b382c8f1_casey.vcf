@@ -1,1 +1,12 @@
-
+BEGIN:VCARD
+VERSION:3.0
+FN;CHARSET=UTF-8:Casey Matthews
+N;CHARSET=UTF-8:Matthews;Casey;;;
+EMAIL;CHARSET=UTF-8;type=HOME,INTERNET:casey@abyssanalytics.com
+TEL;TYPE=WORK,VOICE:9195230750
+TITLE;CHARSET=UTF-8:Co-Founder
+ORG;CHARSET=UTF-8:Abyss Analytics
+URL;type=WORK;CHARSET=UTF-8:abyssanalytics.com
+X-SOCIALPROFILE;TYPE=linkedin:https://www.linkedin.com/in/caseymatthews/
+REV:2022-10-25T12:48:53.344Z
+END:VCARD
