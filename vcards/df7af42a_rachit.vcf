@@ -2,11 +2,11 @@ BEGIN:VCARD
 VERSION:3.0
 FN;CHARSET=UTF-8:Rachit Shukla
 N;CHARSET=UTF-8:Shukla;Rachit;;;
-EMAIL;CHARSET=UTF-8;type=HOME,INTERNET:rachit@amalgamcapital.com
+EMAIL;CHARSET=UTF-8;type=HOME,INTERNET:rachit@abyssanalytics.com
 TEL;TYPE=WORK,VOICE:9195230750
-TITLE;CHARSET=UTF-8:Managing Director
-ORG;CHARSET=UTF-8:Amalgam Capital
-URL;type=WORK;CHARSET=UTF-8:amalgam.capital
+TITLE;CHARSET=UTF-8:Co-Founder
+ORG;CHARSET=UTF-8:Abyss Analytics
+URL;type=WORK;CHARSET=UTF-8:abyssanalytics.com
 X-SOCIALPROFILE;TYPE=linkedin:https://www.linkedin.com/in/rachit/
 REV:2022-10-25T12:48:53.344Z
 END:VCARD
