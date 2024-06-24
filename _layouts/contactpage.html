@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<div data-aos="fade" data-aos-delay="200" class="contactpage content container">
+<div class="row">
+	<div class="col-xl-10 offset-xl-1">	
+		<div class="page-title">
+			{% assign filename = page.url | replace: 'contact', '' | replace: '/', ''  | replace: '.html', '.md' %}
+			<div class="qr-code" style="background-image: url('{{site.url}}/images/{{ filename }}.svg')">
+			</div>
+		</div>
+		<h2 class="h1">{{ page.title }}</h2>
+		<h4 class="h5">{{ page.job-title }}</h4>
+		<h5>
+			<strong>{{ page.email }}</strong>
+		</h5>
+		<h5>
+			<strong>{{ page.phone }}</strong>
+		</h5>
+	</div>
+</div>
+</div>
+<a class="download-vcard btn-lg" href="{{site.url}}/vcards/{{ filename }}.vcf">Save Contact</a>
