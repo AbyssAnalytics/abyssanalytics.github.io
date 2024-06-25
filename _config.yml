@@ -15,9 +15,14 @@ home:
   limit_domains: 6
 
 collections:
+  domains:
+    output: true
+    sort_by: weight
+  team:
+    output: true
+    sort_by: weight
   contact:
     output: true
-    sort_by: weight    
 
 defaults:
   - scope:
