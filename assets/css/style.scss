@@ -3,7 +3,7 @@
 
 // Colors
 $primary: #54c0a1;
-$primary-dark: #02ae66;
+$primary-dark: #697abb;
 $secondary: #697abb;
 $black: #2f2f41;
 $white: #ffffff;
@@ -17,7 +17,7 @@ $header-background: #0e1426;
 // Links
 $link-color: #ee4465;
 $link-decoration: none;
-$link-hover-color: lighten($darken, 10%);
+$link-hover-color: darken($primary, 10%);
 $link-hover-decoration: underline;
 
 // Fonts
@@ -27,7 +27,7 @@ $font-family-heading: "aktiv-grotesk-extended", helvetica, sans-serif;
 // Footer
 $footer-background-color: #262867;
 $footer-text-color: $white;
-$sub-footer-background-color: darken($primary, 10%);
+$sub-footer-background-color: $page-background;
 $sub-footer-text-color: $white;
 
 // Bootstrap 5.3.2
