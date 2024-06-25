@@ -1,7 +1,6 @@
-# Skinny Bones Gemfile
 source "https://rubygems.org"
 
-gem "jekyll"
-gem "jekyll-sitemap"
-gem "jekyll-gist"
-gem "jekyll-feed"
+gem "webrick", "~> 1.7"
+gem "github-pages", group: :jekyll_plugins
+gem "faraday-retry"
+gem "jekyll-environment-variables"
