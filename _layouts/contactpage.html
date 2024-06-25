@@ -6,13 +6,11 @@ layout: default
     <div class="row justify-content-start">
         <div class="col-12 col-md-8">
             <div class="contactpage">
-				<div class="page-title">
-					{% assign filename = page.url | replace: 'contact', '' | replace: '/', ''  | replace: '.html', '.md' %}
-					<div class="qr-code" style="background-image: url('{{site.url}}/images/{{ filename }}.svg')">
-					</div>
+				{% assign filename = page.url | replace: 'contact', '' | replace: '/', ''  | replace: '.html', '.md' %}
+				<div class="qr-code" style="background-image: url('{{site.url}}/images/{{ filename }}.svg')">
 				</div>
-				<h2 class="h1">{{ page.title }}</h2>
-				<h4 class="h5">{{ page.job-title }}</h4>
+				<h1 class="h1">{{ page.title }}</h1>
+				<h4>{{ page.job-title }}</h4>
 				<h5>
 					<strong>{{ page.email }}</strong>
 				</h5>

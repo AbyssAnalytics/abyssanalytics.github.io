@@ -1,3 +1,26 @@
+/* Contact Page */
+.qr-code {
+  background: $white;
+  width: 180px;
+  height: 180px;
+  display: block;
+  border: 20px solid $white;
+  background-size: cover;
+  margin: 0 auto;
+  position: relative;
+}
+
+a.download-vcard {
+  display: block;
+  position: fixed;
+  bottom: $grid-gutter-width;
+  z-index: 1000;
+  margin: 0px auto;
+  width: 50%;
+  text-align: center;
+  left: 25%;
+}
+
 ---
 ---
 
@@ -9,6 +32,7 @@ $black: #2f2f41;
 $white: #ffffff;
 $white-offset: #adddad;
 $steel: #5c5a5a;
+$body-color: $697abb;
 
 // Background
 $page-background: #0e1426;
