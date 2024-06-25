@@ -1,63 +1,56 @@
-# Site wide configuration
+baseurl: '/'
+siteurl: 'https://abyssanalytics.com'
+permalink: pretty
+title: 'SLK Catalyst Partners'
 
-title: "Amalgam Capital"
-description: "We acquire and sustainably grow underrated businesses as independent sponsors."
-logo: logo-circle.png
-teaser: 
-locale: en
-url: https://amalgamcapital.com
-feed:
-  path: atom.xml
+logo:
+  mobile: "images/logo/logo-mobile.svg"
+  mobile_height: "32px"
+  mobile_width: "32px"
+  desktop: "images/logo/logo.svg"
+  desktop_height: "100px"
+  desktop_width: "260px"
 
-# Jekyll configuration
-
-sass:
-  sass_dir: _sass
-  style: compressed
-permalink: /:categories/:title/
-highlighter: rouge
-gems:
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-
-plugins_dir:
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-feed
-  - jekyll-paginate
+home: 
+  limit_domains: 6
 
 collections:
-  team-members:
-    output: true  
+  domains:
+    output: true
+    sort_by: weight
+  team:
+    output: true
+    sort_by: weight
   contact:
-    output: true    
+    output: true
+    sort_by: weight    
 
 defaults:
-           
+  - scope:
+      path: ""
+      type: "domain"
+    values:
+      layout: "domain"
+  - scope:
+      path: ""
+      type: "team"
+    values:
+      layout: "team"
 
-include:
-  - .htaccess
+sass:
+  style: compressed # possible values: nested expanded compact compressed
+
+plugins:
+  - jekyll-environment-variables
+
 exclude:
-  - "*.less"
-  - "*.sublime-project"
-  - "*.sublime-workspace"
-  - .asset-cache
-  - .bundle
-  - .jekyll-assets-cache
-  - .sass-cache
-  - CHANGELOG
-  - Capfile
   - Gemfile
-  - Gruntfile.js
-  - LICENSE
-  - README
-  - Rakefile
-  - config
-  - gulpfile.js
-  - lib
-  - log
+  - Gemfile.lock
   - node_modules
-  - package.json
-  - spec
-  - tmp
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - LICENSE.md
+  - LICENSE
+  - README.md
