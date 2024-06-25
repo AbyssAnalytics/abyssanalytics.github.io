@@ -1,23 +1,26 @@
 ---
 layout: default
 ---
-<div data-aos="fade" data-aos-delay="200" class="contactpage content container">
-<div class="row">
-	<div class="col-xl-10 offset-xl-1">	
-		<div class="page-title">
-			{% assign filename = page.url | replace: 'contact', '' | replace: '/', ''  | replace: '.html', '.md' %}
-			<div class="qr-code" style="background-image: url('{{site.url}}/images/{{ filename }}.svg')">
-			</div>
-		</div>
-		<h2 class="h1">{{ page.title }}</h2>
-		<h4 class="h5">{{ page.job-title }}</h4>
-		<h5>
-			<strong>{{ page.email }}</strong>
-		</h5>
-		<h5>
-			<strong>{{ page.phone }}</strong>
-		</h5>
-	</div>
+
+<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+    <div class="row justify-content-start">
+        <div class="col-12 col-md-8">
+            <div class="contactpage">
+				<div class="page-title">
+					{% assign filename = page.url | replace: 'contact', '' | replace: '/', ''  | replace: '.html', '.md' %}
+					<div class="qr-code" style="background-image: url('{{site.url}}/images/{{ filename }}.svg')">
+					</div>
+				</div>
+				<h2 class="h1">{{ page.title }}</h2>
+				<h4 class="h5">{{ page.job-title }}</h4>
+				<h5>
+					<strong>{{ page.email }}</strong>
+				</h5>
+				<h5>
+					<strong>{{ page.phone }}</strong>
+				</h5>
+                <a class="download-vcard btn-lg" href="{{site.url}}/vcards/{{ filename }}.vcf">Save Contact</a>
+            </div>
+        </div>
+    </div>
 </div>
-</div>
-<a class="download-vcard btn-lg" href="{{site.url}}/vcards/{{ filename }}.vcf">Save Contact</a>
